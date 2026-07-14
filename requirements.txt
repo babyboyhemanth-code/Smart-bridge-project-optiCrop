@@ -1,0 +1,9 @@
+Flask==3.1.0
+Flask-MySQLdb==2.0.0
+mysqlclient
+numpy
+pandas
+scikit-learn
+joblib
+matplotlib
+requests

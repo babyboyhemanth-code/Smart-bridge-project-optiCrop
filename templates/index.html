@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OptiCrop</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="/">🌱 OptiCrop</a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/register">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="container mt-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="display-4 fw-bold text-success">
+            Smart Agricultural Production Optimization Engine
+          </h1>
+
+          <p class="lead mt-4">
+            OptiCrop helps farmers make informed decisions using Machine
+            Learning. Predict suitable crops, fertilizers, irrigation needs,
+            crop yield, and weather information in one place.
+          </p>
+
+          <a href="/register" class="btn btn-success btn-lg"> Get Started </a>
+        </div>
+
+        <div class="col-md-6 text-center">
+          <img
+            src="{{ url_for('static', filename='images/home_banner.jpg') }}"
+            class="img-fluid"
+            width="500"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+
+    <section class="container mt-5">
+      <h2 class="text-center text-success mb-5">Our Services</h2>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              src="{{ url_for('static', filename='images/crop.jpg') }}"
+              class="card-img-top"
+            />
+
+            <div class="card-body">
+              <h4>Crop Recommendation</h4>
+
+              <p>
+                Find the best crop based on soil nutrients, temperature,
+                humidity, pH, and rainfall.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              src="{{ url_for('static', filename='images/fertilizer.jpg') }}"
+              class="card-img-top"
+            />
+
+            <div class="card-body">
+              <h4>Fertilizer Suggestion</h4>
+
+              <p>
+                Recommend the ideal fertilizer according to crop and soil
+                conditions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img
+              src="{{ url_for('static', filename='images/weather.jpg') }}"
+              class="card-img-top"
+            />
+
+            <div class="card-body">
+              <h4>Weather Forecast</h4>
+
+              <p>
+                Check weather conditions before farming to improve agricultural
+                productivity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-success text-white text-center p-3 mt-5">
+      © 2026 OptiCrop | Smart Agriculture Project
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
